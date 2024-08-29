@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-gray-400">
+<html lang="en" class="bg-gray-50">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="max-w-7xl text-gray-500 bg-gray-50 mx-auto">
+<body class="text-gray-500">
   <header>
-    <nav class="flex justify-between items-center py-8">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto py-8">
       <h1 class="text-black font-bold text-4xl">ReTro</h1>
       <div class="flex gap-6">
         <div class="flex items-center gap-3">
@@ -22,7 +22,35 @@
       </div>
     </nav>
   </header>
-  <main></main>
+
+  <main class="max-w-6xl mx-auto">
+
+    <!-- Join Forum -->
+     <section class="flex justify-around items-center px-14 py-10 my-20 rounded-3xl bg-slate-900">
+      <div>
+        <h2 class="text-4xl text-white font-bold">Join Our Forum</h2>
+        <p class="text-indigo-300 my-5">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app. </p>
+        <button class="font-semibold text-xl text-white bg-blue-500 rounded-full pt-2 pb-3 px-10">Register Now</button>
+      </div>
+      <div>
+        <img src="images/joinforum.png">
+      </div>
+     </section>
+
+    <!-- Latest Posts -->
+    <section id="latest-posts">
+      <div class="card bg-base-100 w- shadow-xl">
+        <figure class="px-6 pt-6">
+          <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp" class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title">Shoes!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer class="bg-gray-200 py-24 text-center">
     <h1 class="text-black font-bold text-4xl">ReTro</h1>
     <p class="w-full md:w-1/2 mx-auto my-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
@@ -35,5 +63,7 @@
     <hr class="bg-gray-400 h-[2px] my-8">
     <p>2017, All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
