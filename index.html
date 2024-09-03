@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-gray-50">
+<html lang="en" class="bg-gray-50 text-gray-500">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="text-gray-500">
+<body>
 
-  <header>
-    <nav class="flex justify-between items-center max-w-6xl mx-auto py-8">
+  <header class="max-w-6xl mx-auto">
+    <nav class="flex justify-between items-center py-8">
       <h1 class="text-black font-bold text-4xl">ReTro</h1>
       <div class="flex gap-6">
         <div class="flex items-center gap-3">
@@ -22,6 +22,31 @@
         <button class="font-semibold text-xl text-white bg-blue-500 rounded-full pt-2 pb-3 px-10">Sign In</button>
       </div>
     </nav>
+
+    <!-- Banner -->
+    <section class="flex p-20 rounded-3xl justify-between items-center bg-[url('/images/bgbanner.png')] bg-slate-900 bg-blend-lighten bg-bottom bg-no-repeat text-slate-300">
+      <div>
+        <h1 class="text-6xl text-white font-extrabold">Welcome to the<br><span class="bg-gradient-to-r from-slate-400 text-transparent to-violet-900 bg-clip-text">Retro</span> Forum</h1>
+        <p class="text-lg my-8">Share your favorite opinion and win and wp<br>forum coffee mug!</p>
+        <input class="bg-white px-6 py-3 rounded-full w-4/5" id="search-box" type="text" placeholder="Search here anything">
+        <button class="bg-indigo-400 ml-[-104px] py-2 px-6 rounded-full text-white" id="search-btn">Search</button>
+      </div>
+      
+      <div class="flex p-12 h-fit justify-between items-center gap-5 rounded-2xl text-2xl bg-white text-gray-600">
+        <div class="flex flex-col gap-3">
+          <p>Registered User</p>
+          <p>Forum</p>
+          <p>Topics</p>
+          <p>Replies</p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <p>01</p>
+          <p>01</p>
+          <p>01</p>
+          <p>01</p>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main class="max-w-6xl mx-auto">
